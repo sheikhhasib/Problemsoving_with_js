@@ -30,12 +30,12 @@ function woodCalculator(chair,table,khat){
 // brickCalculator 
 function brickCalculator(n){
     var totalBrick = 0;
-     if(n<=0){
+     if(n<0){
          console.log("please enter positive value");
      }else{
          //first 10 flor
          if(n>=10){
-            totalBrick = 10*15;
+            totalBrick += 10*15;
          }else{
             totalBrick += n*15;
          }
@@ -52,6 +52,8 @@ function brickCalculator(n){
         return totalBrick * 1000;
      }
 }
+
+
 
 
 // tinyFriend 
