@@ -3,25 +3,19 @@ function feetToMile(feet){
     if(feet < 0){
         console.log("negative number not allow")
     }else{
-        var mile = feet * 0.000189394;
-        return mile;
+        var miles = feet / 5280;
+        return miles;
     }
 }
-
-var output = feetToMile(0);
-console.log(output.toFixed(4));
-
-
-
 
 // woodCalculator
 function woodCalculator(chair,table,khat){
     var totalChairWood = 0;
     var totalTableWood = 0;
     var totalKhatWood = 0;
-    var totalWood = undefined;
+    var totalWood = 0;
  
-    if(chair <= 0 || table <= 0 || khat <= 0){
+    if(chair < 0 || table < 0 || khat < 0){
         console.log("please enter valid value");
     }else{
         totalChairWood = chair * 1;
@@ -31,10 +25,6 @@ function woodCalculator(chair,table,khat){
     }
     return totalWood;
 }
-
-var totalWood = woodCalculator(3,3,5);
-console.log(totalWood); 
-
 
 
 // brickCalculator 
@@ -63,12 +53,8 @@ function brickCalculator(n){
      }
 }
 
-var result = brickCalculator(15);
-console.log(result);
-
 
 // tinyFriend 
-
 function tinyFriends(friends){
     var min = friends[0];
     for(var i=0 ; i<friends.length ;i++){
@@ -82,6 +68,3 @@ function tinyFriends(friends){
     return min;
 }
 
-var friends = ["hasib","sumn","","ariful","pan"];
-var result = tinyFriends(friends);
-console.log(result);
