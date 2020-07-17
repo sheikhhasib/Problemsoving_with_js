@@ -57,7 +57,7 @@ function brickCalculator(n){
 
 
 // tinyFriend 
-function tinyFriends(friends){
+function tinyFriend(friends){
     var min = friends[0];
     for(var i=0 ; i<friends.length ;i++){
         var element = friends[i];
